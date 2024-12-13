@@ -9,6 +9,9 @@ Our dataset comprises 8,000 different chemical structures, the atomic coordinate
 ## Data:
 Our dataset includes 8,000 different chemical structures with label NMR peak values for each hydrogen in all of the compounds. The preprocessing for this data includes reading from the SDF file into RDKit and using RDKit to extract all the features relevant for creating a graph structure. For this project this included the atom index, atom type, bond type, connectivity, bond distance. This information is what ended up being passed to our model to build predictions.
 
+![Chemical Structure Example](img/mol_pic.png "Sample Chemical Structure")
+
+
 ## Experiments and Analysis:
 The first steps of this project consisted of looking for previous work on the topic of working machine learning nuclear magnetic spectroscopy and we saw that many previous studies had been done in this topic and that many of the previous studies had used graph neural networks as basis for their solution to these problems. Once we had taken a closer look at GNNs and understood the theory behind graph machine learning, we looked into how to preprocess this kind of data. To do this we looked at the code and scripts used in the CASCADE paper2 to see how this kind of data was preprocessed. The next step was to carefully inspect the code used in this paper so that we could apply the same type of transformations on the data that they did to the dataset. 
 
