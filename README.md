@@ -55,7 +55,7 @@ For this model, the mean squared error is used as the loss function, the Adam op
 
 Once the model was implemented into PyTorch, we focused tuning different hyperparameters. For this we focused on the batch size, the amount of message passing layers, the learning rate. We also experimented with lowering the sizes of the training and validation sets to help lower computing time as runs with larger amounts of data proved to be computationally expensive. The different runs we ran are shown below in a table (Train/Validation Loss Graphs are shown at the bottom of the Report):  
 
-![training_table](img/traing_table_pic.png "Training Table")
+![training_table](img/training_table_pic.png "Training Table")
 
 ## Results and Conclusions:
 After our Hyperparameter tuning, we decided to use the model from experiment 11 as our final testing set. After being fitted, the model was tested using the held out testing set containing 500 molecules. Our final error values were 0.2167 ppm2 for our Mean Squared Error and 0.3041 ppm for our Mean Absolute Loss. This means that the average difference between the predicted shifts and the actual shifts were around 0.3. This is pretty good and would actually be usable as a way to test to see if a predicted molecule structure matches an experiment NMR spectroscopy result. To better put in context, a graph of typical hydrogen shift values are shown below:
